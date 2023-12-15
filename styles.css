@@ -1,0 +1,132 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-rectangle {
+    height: 140px;
+    width: 260px;
+    background-color: rgb(132, 174, 211);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(red,yellow);
+}
+
+.inner-rectangle {
+    height: 130px;
+    width: 250px;
+    background-color: rgb(56, 49, 49);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    font-size: 23px;
+}
+
+.minute {
+    font-size: 39px;
+}
+
+.sec {
+    font-size: 34px;
+}
+
+.msec {
+    font-size: 27px;
+}
+
+.button-wrapper {
+    width: 250px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.laps {
+    list-style: none;
+    color: white;
+    height: 250px;
+    width: 250px;
+    overflow: auto;
+    padding: 30px 0;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.laps::-webkit-scrollbar{
+    display: none;
+}
+
+.lap-item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid rgb(97, 46, 46);
+    margin-bottom: 15px;
+
+}
+
+.number {
+    color: white;
+}
+
+.time-stamp {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.lap-clear-button {
+    display:block;
+    position: fixed;
+    z-index: 1000;
+    left: 48%;
+    bottom: 35px;
+    transform: translate(-50%);
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255,0.9);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
